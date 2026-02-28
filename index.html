@@ -2,7 +2,7 @@
 
 <html lang="en">
     <head>
-        <title>Bookstore - Index</title>
+        <title>White Mountains Bookstore</title>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
@@ -10,7 +10,7 @@
     <body class="d-flex flex-column text-center text-bg-dark">
         <nav class="z-1 navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand fs-2" href="#">
+                <a class="navbar-brand fs-2" href="index.html">
                <!-- summits.svg sourced from game-icons.net
                     specific "summits" graphic created by user Delapouite, used under a CC BY 3.0 license -->
                     <img class="d-inline-block align-text-top" src="summits.svg" alt="White Mountains Bookstore" width="50" height="50">
@@ -26,23 +26,23 @@
                                 Catalog
                             </a>
                             <ul class="dropdown-menu z-1 ">
-                                <li><a class="dropdown-item" href="#">Non-Fiction</a></li>
-                                <li><a class="dropdown-item" href="#">True Crime</a></li>
+                                <li><a class="dropdown-item" href="catalog.html">Non-Fiction</a></li>
+                                <li><a class="dropdown-item" href="catalog.html">True Crime</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">YA</a></li>
-                                <li><a class="dropdown-item" href="#">Fantasy</a></li>
-                                <li><a class="dropdown-item" href="#">Mystery</a></li>
-                                <li><a class="dropdown-item" href="#">Romance</a></li>
+                                <li><a class="dropdown-item" href="catalog.html">YA</a></li>
+                                <li><a class="dropdown-item" href="catalog.html">Fantasy</a></li>
+                                <li><a class="dropdown-item" href="catalog.html">Mystery</a></li>
+                                <li><a class="dropdown-item" href="catalog.html">Romance</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Events</a>
+                        <a class="nav-link" href="events.html">Events</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Locations</a>
+                        <a class="nav-link" href="locations.html">Locations</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -51,26 +51,49 @@
 
         <img class="img-fluid position-absolute z-0" src="bookshop.jpg" alt="">
         <main class="d-flex">
-            <div class="p-3 flex-column align-items-start">
+            <div class="p-3 flex-column w-50">
                 <div class="card bg-primary text-white">
                     <h2>Hey there.</h2>
                 </div>
                 <div class="card">
                     <p>Looking for your latest summer read? Maybe something to doze off to late in the night? 
                         You're at the right place.</p>
+                    <p>Whether you want to explore worlds unlike anything you've seen before, study up on the classics, 
+                       or dive deep into a story of intrigue and romance, we've got it all.
+                    </p>
                     <p>Here at White Mountains Bookstore, we offer the best deals on new & used material.<br> 
                         And unlike some retailers named after forests, we can get you the books you want the day they're released 
                         - no delivery time necessary.
                     </p>
                 </div>
             </div>
-            <div class="p-3 flex-column align-items-end">
+            <div class="p-3 flex-column w-50">
                 <div class="card bg-primary text-white">
                     <h2>Newest picks</h2>
                 </div>
                 <div class="card">
                     <p>Not sure where to start? Check out these picks from our wonderful staff:</p>
-
+                    <div id="carouselExample" class="carousel slide w-50 mx-auto">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="img2test.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </main>
